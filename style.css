@@ -152,7 +152,7 @@
 }
 
 .menu__title--1 {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -163,7 +163,7 @@
 }
 
 .menu__title--2 {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -185,7 +185,7 @@
 }
 
 .menu__item {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -255,7 +255,7 @@
 }
 
 .card h2 {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -264,7 +264,7 @@
 }
 
 .card p {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -324,7 +324,7 @@
 .card__item .card__title {
   margin-left: 18px;
   margin-top: 25px;
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -333,7 +333,7 @@
 }
 
 .card__item .card__content {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -344,7 +344,7 @@
 }
 
 .card__item .card__count {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -358,7 +358,7 @@
 .card__button {
   text-decoration: none;
   border: 1px solid #FF6A6A;
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -387,12 +387,12 @@
           align-items: center;
 }
 
-.row--2_column--left {
+.subscribe_column--left {
   width: 100%;
   max-width: 360px;
 }
 
-.row--2_column--left img {
+.subscribe_column--left img {
   margin-bottom: 30px;
 }
 
@@ -418,13 +418,13 @@
           align-items: center;
 }
 
-.footer__row--1 {
+.section--advantages {
   padding-top: 104px;
   padding-bottom: 104px;
   background: #222224;
 }
 
-.footer__icon {
+.advantage {
   width: 100%;
   max-width: 360px;
   padding: 10px;
@@ -443,22 +443,29 @@
           align-items: center;
 }
 
-.footer__icon img {
+.advantage img {
   margin-bottom: 28px;
 }
 
-.footer__icon--title {
-  font-family: Lato;
-  font-style: normal;
+.advantage--title {
+  font-family: 'Lato', sans-serif;
   font-weight: normal;
-  font-size: 19.96px;
+  font-size: 20px;
   line-height: 24px;
   color: #FBFBFB;
   margin-bottom: 16px;
 }
 
-.footer__icon--content {
-  font-family: Lato;
+.advantage--content {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FBFBFB;
+}
+
+.advantage--content {
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 13.972px;
@@ -466,7 +473,7 @@
   color: #FBFBFB;
 }
 
-.footer__row--2 {
+.section--subscribe {
   background-image: url(img/fon__footer__row--2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -474,19 +481,44 @@
   height: 448px;
 }
 
-.footer__row--3 {
+.social__row {
   background: #222224;
   width: 100%;
   height: 80px;
 }
 
 .brand {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   color: #FBFBFB;
+}
+
+.social__icon:hover {
+  background-color: #f16d7f;
+  color: #fff;
+}
+
+.social__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f8f8f8;
+  margin: 5px;
+  width: 32px;
+  height: 32px;
 }
 
 .social {
@@ -497,14 +529,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.social img {
-  margin-left: 7px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .item--right_titel {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -513,7 +547,7 @@
 }
 
 .item--right_content {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -521,7 +555,7 @@
   color: #222224;
 }
 
-#footer_form {
+#subscribe_form {
   margin-top: 32px;
   width: 100%;
   display: -webkit-box;
@@ -535,12 +569,12 @@
       flex-wrap: nowrap;
 }
 
-#footer_form input[type="email"] {
+#subscribe_form input[type="email"] {
   background: #E1E1E1;
   border-radius: 20px 0 0 20px;
   border: none;
   padding: 15px 60px 15px 22px;
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -549,17 +583,18 @@
   opacity: 0.67;
 }
 
-#footer_form input[type="submit"] {
+#subscribe_form input[type="submit"] {
   background: #F16D7F;
   padding: 15px  22px;
   border-radius: 0 20px 20px 0;
   border: none;
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .assortment__item--mobile {
@@ -634,18 +669,18 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .footer__row--1 {
+  .section--advantage {
     padding-top: 48px;
     padding-bottom: 64px;
   }
-  .footer__row--2 {
+  .section--subscribe {
     padding-top: 60px;
     padding-bottom: 110px;
   }
-  .footer__row--2 .row--2_colum--right {
+  .section--subscribe .subscribe_colum--right {
     margin-top: 60px;
   }
-  .footer__row--3 .reverse {
+  .social__row .reverse {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -699,10 +734,10 @@
   .navbar__none {
     display: none;
   }
-  .footer__row--3 {
+  .social__row {
     height: 145px;
   }
-  .footer__row--3 .reverse {
+  .social__row .reverse {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -718,7 +753,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .footer__row--3 .social {
+  .social__row .social {
     margin-top: 40px;
     margin-bottom: 40px;
   }

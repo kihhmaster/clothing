@@ -4,10 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<section class="navbar">
+	<header class="navbar">
 		<div class="navbar__wrapper">
 			<div class="navbar__icons">
 				<a class="navbar__icon"><img src="img/icon_1.svg" alt="icon"></a>
@@ -20,7 +23,7 @@
 			</div>
 
 		</div>
-	</section>
+	</header>
 
 	<section class="head">
 
@@ -32,7 +35,7 @@
 			
 		</div>
 
-		<!-- <div class="menu">
+		<nav class="menu">
 			<div class="close"><img src="img/close.svg" alt="button"></div>
 			<div class="menu__wrapper">
 				<p class="menu__title--1">menu</p>						
@@ -62,7 +65,7 @@
 				</div>
 			</div>
 	 
-		</div> -->
+		</nav>
 		
 	</section>
 
@@ -137,51 +140,55 @@
 		
 	</section>
 
+	<section class="section footer__row section--advantages">
+		<div class="row--wrapper container">
+			<div class="advantage">
+				<img src="img/footer__icon--1.svg" alt="icon">
+				<p class="advantage--title">Free Delivery</p>
+				<p class="advantage--content">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+			</div>
+			<div class="advantage">
+				<img src="img/footer__icon--2.svg" alt="icon">
+				<p class="advantage--title">Sales & discounts</p>
+				<p class="advantage--content">Worldwide delivery on all. Authorit tively morph next-generation innov tion wi           th extensive models.</p>
+			</div>
+			<div class="advantage">
+				<img src="img/footer__icon--3.svg" alt="icon">
+				<p class="advantage--title">Quality assurance</p>
+				<p class="advantage--content">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="footer__row section--subscribe">
+			<div class="row--wrapper container">
+				<div class="subscribe_column--left">
+					<img src="img/footer__img--1.png" alt="photo">
+					<p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+				</div>
+				<div class="subscribe_colum--right">
+					<p class="item--right_titel">SUBSCRIBE </p>
+					<p class="item--right_content">FOR OUR NEWLETTER AND PROMOTION</p>
+					<form id="subscribe_form">
+						<input type="email" value="Enter Your Email"><input type="submit" value="Subscribe">
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 	<footer>
 		<div class="footer__wrapper">
-			<div class="footer__row footer__row--1">
-				<div class="row--wrapper container">
-					<div class="footer__icon">
-						<img src="img/footer__icon--1.svg" alt="icon">
-						<p class="footer__icon--title">Free Delivery</p>
-						<p class="footer__icon--content">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-					</div>
-					<div class="footer__icon">
-						<img src="img/footer__icon--2.svg" alt="icon">
-						<p class="footer__icon--title">Sales & discounts</p>
-						<p class="footer__icon--content">Worldwide delivery on all. Authorit tively morph next-generation innov tion wi           th extensive models.</p>
-					</div>
-					<div class="footer__icon">
-						<img src="img/footer__icon--3.svg" alt="icon">
-						<p class="footer__icon--title">Quality assurance</p>
-						<p class="footer__icon--content">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="footer__row footer__row--2">
-				<div class="row--wrapper container">
-					<div class="row--2_column--left">
-						<img src="img/footer__img--1.png" alt="photo">
-						<p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
-					</div>
-					<div class="row--2_colum--right">
-						<p class="item--right_titel">SUBSCRIBE </p>
-						<p class="item--right_content">FOR OUR NEWLETTER AND PROMOTION</p>
-						<form id="footer_form">
-							<input type="email" value="Enter Your Email"><input type="submit" value="Subscribe">
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="footer__row footer__row--3">
+			<div class="footer__row social__row">
 				<div class="row--wrapper reverse container">
 					<div class="brand">© 2021  Brand  All Rights Reserved.</div>
 					<div class="social">
-						<div class="social__icon"><img src="img/social__icon-1.svg" alt="socialIcon"></div>
-						<div class="social__icon"><img src="img/social__icon-2.svg" alt="socialIcon"></div>
-						<div class="social__icon"><img src="img/social__icon-3.svg" alt="socialIcon"></div>
-						<div class="social__icon"><img src="img/social__icon-4.svg" alt="socialIcon"></div>
+						<div class="social__icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+						<div class="social__icon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+						<div class="social__icon"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+						<div class="social__icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
 					</div>
 				</div>
 			</div>
