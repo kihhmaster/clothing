@@ -1,4 +1,4 @@
-$color1: #F16D7F;
+$accent1: #F16D7F;
 
 * {
 	
@@ -116,7 +116,7 @@ $color1: #F16D7F;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 17px;
-	color: #F16D7F;
+	color:$accent1;
 	margin-bottom: 12px;
 	margin-top: 20px;
 	text-transform: uppercase;
@@ -254,7 +254,7 @@ $color1: #F16D7F;
 		font-weight: normal;
 		font-size: 16px;
 		line-height: 19px;
-		color: #F16D7F;
+		color:$accent1;
 		margin-top: 18px;
 		margin-bottom: 18px;
 		margin-left: 18px;
@@ -366,7 +366,7 @@ $color1: #F16D7F;
 	color: #FBFBFB;
 }
 .social__icon:hover {
-	background-color: #f16d7f;
+	background-color:$accent1;
 	color: #fff;
 }
 .social__icon{
@@ -424,7 +424,7 @@ $color1: #F16D7F;
 		opacity: 0.67;
 	}
 	input[type="submit"] {
-		background: #F16D7F;
+		background:$accent1;
 		padding: 15px  22px;
 		border-radius: 0 20px 20px 0;
 		border: none;
@@ -448,6 +448,62 @@ $color1: #F16D7F;
 	margin-bottom: 51px;
 	margin-top: 20px;
 }
+.car__img {
+	max-width: 100%;
+	height: auto;
+	align-self: flex-start;
+}
+
+.card__hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(58, 56, 56, 0.86);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease;
+}
+.card__picture {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card__btn {
+	padding: 10px 16px 9px 13px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	outline: none;
+}
+.card__icon {
+	color: #fff;
+}
+.card__icon__title {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	margin-left: 11px;
+}
+.card__btn:hover {
+	background: $accent1 ;
+	border: none;
+}
+.card__hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card__picture:hover .card__hover {
+	visibility: visible;
+	opacity: 1;
+
+}
 .navigator__wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -459,7 +515,7 @@ $color1: #F16D7F;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 29px;
-	color: #F16D7F;
+	color:$accent1;
 	text-transform: uppercase;
 }
 .navigator__item {
