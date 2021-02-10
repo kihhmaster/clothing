@@ -10,80 +10,103 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header class="navbar">
+	<div class="navbar navbar__catalog">
 		<div class="navbar__wrapper">
 			<div class="navbar__icons">
 				<a class="navbar__icon"><img src="img/icon_1.svg" alt="icon"></a>
 				<a class="navbar__icon"><img src="img/icon_2.svg" alt="icon"></a>
 			</div>
 			<div class="navbar__icons">
-				<a class="navbar__icon"><img src="img/icon_3.svg" alt="icon"></a>
+				<a class="navbar__icon burger"><img src="img/icon_3.svg" alt="icon"></a>
 				<a class="navbar__icon navbar__none"><img src="img/icon_4.svg" alt="icon"></a>
 				<a class="navbar__icon navbar__none"><img src="img/icon_5.svg" alt="icon"></a>
 			</div>
 		</div>
 		<div class="catalog__wrapper">
 			<div class="navigator__wrapper container">
-				<div class="navigator__value">NEW ARRIVALS</div>
+				<p class="navigator__value">NEW ARRIVALS</p>
 				<div class="navigator__item__wrapper">
-					<div class="navigator__item">home/</div>
-					<div class="navigator__item">men/</div>
-					<div class="navigator__item">NEW ARRIVALS</div>
+					<a href="#" class="navigator__item">home/</a>
+					<a href="#" class="navigator__item">men/</a>
+					<a href="#" class="navigator__item">NEW ARRIVALS</a>
+
+			</div>
+		</div>
+	</div>
+
+	<section class="overlay">
+		<div class="menu">
+			<button class="close">x</button>
+			<div class="menu__wrapper">
+				<p class="menu__title--1">menu</p>						
+				<div class="menu__column">
+					<p class="menu__title--2">man</p>
+					<a href="catalog.html" class="menu__item">Accessories</a>
+					<a href="#" class="menu__item">Bags</a>
+					<a href="#" class="menu__item">Denim</a>
+					<a href="#" class="menu__item">T-Shirts</a>
+				</div>
+				<div class="menu__column">
+					<p class="menu__title--2">woman</p>
+					<a href="#" class="menu__item">Accessories</a>
+					<a href="#" class="menu__item">Jecjets & Coats</a>
+					<a href="#" class="menu__item">Polos</a>
+					<a href="#" class="menu__item">T-Shirts</a>
+					<a href="#" class="menu__item">Shirts</a>
+				</div>
+				<div class="menu__column">
+					<p class="menu__title--2">kids</p>
+					<a href="#" class="menu__item">Accessories</a>
+					<a href="#" class="menu__item">Jecjets & Coats</a>
+					<a href="#" class="menu__item">Polos</a>
+					<a href="#" class="menu__item">T-Shirts</a>
+					<a href="#" class="menu__item">Shirts</a>
+					<a href="#" class="menu__item">Bags</a>
 				</div>
 			</div>
-
+	 
 		</div>
-	</header>
-
-
-
-	<!-- <nav class="menu">
-		<div class="close"><img src="img/close.svg" alt="button"></div>
-		<div class="menu__wrapper">
-			<p class="menu__title--1">menu</p>						
-			<div class="menu__column">
-				<p class="menu__title--2">man</p>
-				<a href="#" class="menu__item">Accessories</a>
-				<a href="#" class="menu__item">Bags</a>
-				<a href="#" class="menu__item">Denim</a>
-				<a href="#" class="menu__item">T-Shirts</a>
-			</div>
-			<div class="menu__column">
-				<p class="menu__title--2">woman</p>
-				<a href="#" class="menu__item">Accessories</a>
-				<a href="#" class="menu__item">Jecjets & Coats</a>
-				<a href="#" class="menu__item">Polos</a>
-				<a href="#" class="menu__item">T-Shirts</a>
-				<a href="#" class="menu__item">Shirts</a>
-			</div>
-			<div class="menu__column">
-				<p class="menu__title--2">kids</p>
-				<a href="#" class="menu__item">Accessories</a>
-				<a href="#" class="menu__item">Jecjets & Coats</a>
-				<a href="#" class="menu__item">Polos</a>
-				<a href="#" class="menu__item">T-Shirts</a>
-				<a href="#" class="menu__item">Shirts</a>
-				<a href="#" class="menu__item">Bags</a>
-			</div>
-		</div>
-	
-	</nav> -->
-		
-
-
+	</section>
 
 	<section class="contenet">
 
-		<div class="filter">
-			<div class="filter__wrapper">
+		<div class="filtation__content">
+			<div class="filtation__wrapper container">
 
+				<div class="filter__left">
+					<a href="#">Filter<img src="img/filterCategory--icon.svg" alt=""></a>
+				</div>
+
+				<div class="filter_right">
+					<select name="trending now"  id="">
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+					</select> 
+					<select name="size"  id="">
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+					</select>
+					<select name="price" id="">
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+						<option value="">пункт_1</option>
+					</select>
+				</div>
+
+				 
 			</div>
 		</div>
 		
 		<div class="card">
 			<div class="card__wrapper container">
-				<h2>Fetured Items</h2>
-				<h3>Shop for items based on what we featured in this week</h3>
 				<div class="card__box">
 					<div class="card__item">
 						<div class="card__picture">
@@ -292,5 +315,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
