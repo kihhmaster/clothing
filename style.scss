@@ -16,7 +16,10 @@ $accent1: #F16D7F;
 	width: 100%;
 	height: 75px;
 	background-color: #222222;
-	position: relative;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
 }
 
 .navbar__wrapper {
@@ -49,6 +52,7 @@ $accent1: #F16D7F;
 }
 
 .head {
+	margin-top: 75px;
 	position: relative;
 	height: 764px;
 	width: 100%;
