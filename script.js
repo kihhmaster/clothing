@@ -14,19 +14,19 @@ burger.addEventListener("click", () => {
 
 	}
 	if(!isOpen) {
-		document.body.style.overflow = "null";
+		document.body.style.overflow = "scroll";
 		document.body.style.height = "null";
-		document.body.parentNode.style.overflowY = "null";
+		document.body.parentNode.style.overflowY = "scroll";
 
 	}
 });
 closebtn.addEventListener("click", () => {
 	isOpen = !isOpen;
 	overlay.classList.remove("open");
-	document.body.style.overflow = "null";
+	document.body.style.overflow = "scroll";
 });
 overlay.addEventListener("click", () => {
 	isOpen = !isOpen;
 	overlay.classList.remove("open");
-	document.body.style.overflow = "null";
+	document.body.style.overflow = "scroll";
 });
