@@ -802,7 +802,7 @@
 
 #subscribe_form input[type="submit"] {
   background: #F16D7F;
-  padding: 15px  22px;
+  padding: 15px 22px;
   border-radius: 0 20px 20px 0;
   border: none;
   font-family: 'Lato', sans-serif;
@@ -969,6 +969,16 @@
   display: flex;
 }
 
+.filtation__content__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 30px;
+}
+
 .filtation__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -976,15 +986,188 @@
   width: 100%;
   height: 25px;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 620px;
+  position: relative;
 }
 
-.filter_right {
+.filter_main--title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: block;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter__left::after {
+  margin-left: 11px;
+  content: url(img/filterCategory--icon.svg);
+}
+
+.filter_main--title[open] {
+  background: #ffff;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 360px;
+  z-index: 2;
+  top: -12px;
+  left: -16px;
+  padding-top: 13px;
+  padding-left: 16px;
+  border: none;
+  color: #F16D7F;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.filter_main--title[open]:focus {
+  outline: none;
+}
+
+.filter_main--title[open] > .filter__left::after {
+  content: url(img/filterCategory--icon_2.svg);
+}
+
+.filter_main--title[open] > .filter__left > .filter__icon {
+  display: none;
+}
+
+.filter_main--title[open] > .filter__left:focus {
+  outline: none;
+}
+
+.filter-left__main {
+  margin-top: 16px;
+  position: relative;
+}
+
+.filter-left__main summary {
+  border-left: 5px solid #F16D7F;
+  height: 30px;
+  padding: 18px 11px 9px 11px;
+  border-bottom: 1px solid #EBEBEB;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.filter-left__main[open] {
+  position: relative;
+  background: #fff;
+  width: 80%;
+  height: 530px;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  color: #6F6E6E;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+
+.filter__list {
+  padding-left: 20px;
+}
+
+.filter__left--mobaile {
+  display: none;
+}
+
+.filter__list--item {
+  margin-top: 24px;
+}
+
+.filter__list--item a {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  text-decoration: none;
+}
+
+.filter__list--item a:hover {
+  color: #F16D7F;
+  -webkit-transition: color 0.1s ease-in;
+  transition: color 0.1s ease-in;
+}
+
+.filter__right_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.filter-right_main > summary::after {
+  content: url(img/filter-righht--icon.svg);
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.filter-right_main[open] > summary::after {
+  content: '\2716';
+}
+
+.filter-right_main[open] > summary {
+  text-align: right;
+  color: #F16D7F;
+}
+
+.filter-right_main[open] > .filter-right_list {
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+}
+
+.filter-right_item {
+  margin-top: 10px;
+}
+
+.filter-right_item input {
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+summary {
+  display: block;
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 .slider {
