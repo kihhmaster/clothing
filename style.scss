@@ -369,7 +369,7 @@ $accent1: #F16D7F;
 	position: relative;
 	width: 100%;
 	text-align: center;
-	margin-bottom: 110px;
+	margin-bottom: 48px;
 	border: none;
 
 	h2 {
@@ -892,9 +892,11 @@ $accent1: #F16D7F;
 .filter__list {
 	padding-left: 20px;
 }
+
 .filter__left--mobaile {
 	display: none;
 }
+
 .filter__list--item {
 	margin-top: 24px;
 
@@ -906,6 +908,7 @@ $accent1: #F16D7F;
 		line-height: 17px;
 		color: #6F6E6E;
 		text-decoration: none;
+
 		&:hover {
 			color: $accent1;
 			transition: color 0.1s ease-in;
@@ -926,23 +929,27 @@ $accent1: #F16D7F;
 	color: #6F6E6E;
 
 }
+
 .filter-right_main>summary::after {
 	content: url(img/filter-righht--icon.svg);
 	margin-right: 16px;
 	margin-left: 16px;
-	
+
 }
+
 .filter-right_main[open]>summary::after {
 	content: '\2716';
 	// content: url(img/filter-righht--icon.svg);
 	// transform: rotate(180deg);
 }
+
 .filter-right_main[open]>summary {
 	text-align: right;
 	color: $accent1;
-	
+
 }
-.filter-right_main[open]>.filter-right_list{
+
+.filter-right_main[open]>.filter-right_list {
 	background: #FFFFFF;
 	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 	position: relative;
@@ -951,12 +958,15 @@ $accent1: #F16D7F;
 	padding-bottom: 20px;
 	margin-right: 10px;
 }
+
 .filter-right_item {
 	margin-top: 10px;
+
 	input {
 		margin-right: 10px;
 	}
 }
+
 ul {
 	list-style-type: none;
 }
@@ -970,7 +980,59 @@ summary::-webkit-details-marker {
 	display: none;
 }
 
+// pagination section
+.pagination {
+	@include flex-center;
+	margin-bottom: 95px;
 
+}
+
+.pagination__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #EBEBEB;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	
+}
+.pagination__button {
+	background-color: transparent;
+	border: none;
+	font-family: Lato;
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	&:focus {
+		outline: 0.5px solid #EBEBEB;
+	}
+	
+}
+.pagination__list {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding-bottom: 4px;
+
+}
+
+.paginetion_item {
+	width: 10px;
+	height: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #EBEBEB;
+	&:hover {
+		color: $accent1;
+		transition: color 0.1s ease-in;
+	}
+}
 
 .slider {
 	position: relative;
