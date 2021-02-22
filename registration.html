@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<section class="navbar">
 		<div class="navbar__wrapper">
@@ -31,7 +34,7 @@
 		<div class="menu">
 			<button class="close">x</button>
 			<div class="menu__wrapper">
-				<p class="menu__title--1">menu</p>						
+				<p class="menu__title--1">menu</p>
 				<div class="menu__column">
 					<p class="menu__title--2">man</p>
 					<a href="catalog.html" class="menu__item">Accessories(catalog.html)</a>
@@ -57,78 +60,57 @@
 					<a href="#" class="menu__item">Bags</a>
 				</div>
 			</div>
-	 
+
 		</div>
 	</section>
 
 	<section class="contenet">
 		<div class="catalog__wrapper">
 			<div class="navigator__wrapper container">
-				<p class="navigator__value">NEW ARRIVALS</p>
-				<div class="navigator__item__wrapper">
-					<a href="#" class="navigator__item">home/</a>
-					<a href="#" class="navigator__item">men/</a>
-					<a href="#" class="navigator__item">NEW ARRIVALS</a>
-
-				</div>
+				<p class="navigator__value">registration</p>
 			</div>
 		</div>
 	</section>
-	<section class="cart">
-		<div class="cart__wrapper container">
-			<div class="cart__left">
-				<div class="cart--left__wrapper">
-					<div class="cart--left__item">
-						<div class="cart--left__img">
-							<img src="img/card__item--3.png" alt="foto">
-						</div>
-						<div class="cart---left__desc">
-							<button class="cart---left__close">x</button>
-							<div class="cart---left__title">MANGO  PEOPLE  T-SHIRT</div>
-							<div class="cart---left__price">Price: <span>$300 </span>	</div>
-							<div class="cart---left__color">Color: <span>Red</span></div>
-							<div class="cart---left__size">Size: <span>Xl</span>	</div>
-							<div class="cart---left__quantity">Quantity:	<input type="text" placeholder="1"></div>
-						</div>
-					</div>
-					<div class="cart--left__item">
-						<div class="cart--left__img">
-							<img src="img/card__item--1.png" alt="foto">
-						</div>
-						<div class="cart---left__desc">
-							<button class="cart---left__close">x</button>
-							<div class="cart---left__title">MANGO  PEOPLE  T-SHIRT</div>
-							<div class="cart---left__price">Price: <span>$300 </span>	</div>
-							<div class="cart---left__color">Color: <span>Red</span></div>
-							<div class="cart---left__size">Size: <span>Xl</span>	</div>
-							<div class="cart---left__quantity">Quantity:	<input type="text" placeholder="1"></div>
-						</div>
-					</div>
-					<div class="cart-left__button__wrapper">
-						<button class="cart__left--button">CLEAR SHOPPING CART</button>
-						<button class="cart__left--button">CONTINUE SHOPPING</button>
-					</div>
-				</div>
 
+	<section class="reg__content">
+		<div class="reg__content__wrapper container">
+			<div class="reg__left">
+				<p class="reg__left--text">Your name</p>
+				<input class="reg__entry" type="text" name="First Name" id="" placeholder="First Name">
+				<input class="reg__entry" type="text" name="Last Name" id="" placeholder="Last Name">
+				<div class="gender">
+					<input class="gender_entry" id="male" type="radio" name="gender" value="male">
+					<label for="male">Male</label>
+					<input class="gender_entry" id="female" type="radio" name="gender" value="female">
+					<label for="female">Female</label>
+					<input class="gender_entry" id="female" type="radio" name="gender" value="other">
+					<label for="female">other</label>
+					
+				</div>
+				<p class="reg__left--text">Your name</p>
+				<input class="reg__entry" type="email" name="" id="" placeholder="Email">
+				<input class="reg__entry" type="password" name="" id="" placeholder="Password">
+				
+				<p class="reg__left--desc">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+				</p>
+				
+				<button class="reg__left__button">JOIN NOW &rarr;</button>
 			</div>
-			<div class="cart__right">
-				 <div class="cart--right__wrapper">
-					  <div class="adress">
-							<p class="adress__title">SHIPPING ADRESS</p>
-							<input type="text" name="country" placeholder="country">
-							<input type="text" name="city"  placeholder="city">
-							<input type="text" name="adress" placeholder="adress">
-							<button class="adress__button">GET A QUOTE</button>
-						</div>
-						<div class="registration">
-							<div class="subTotal">SUB TOTAL  <span>$900</span></div>
-							<div class="grandTotal">GRAND TOTAL <span>$900</span></div>
-							<div class="registration__line"></div>
-							<div class="registration__button">PROCEED TO CHECKOUT</div>
-						</div>         
-				 </div>
+
+			<div class="reg__right">
+				<div class="reg__right--title">LOYALTY HAS ITS PERKS</div>
+				<div class="reg__tight--desc">Get in on the loyalty program where you can earn points and unlock serious perks.
+					Starting with these as soon as you join:</div>
+				<div class="red__right--donation">
+					<div class="donation">15% off welcome offer</div>
+					<div class="donation">Free shipping, returns and exchanges on all orders</div>
+					<div class="donation">$10 off a purchase on your birthday</div>
+					<div class="donation">Early access to products</div>
+					<div class="donation">Exclusive offers & rewards</div>
+				</div>
 			</div>
 		</div>
+
 	</section>
 
 
@@ -150,13 +132,13 @@
 		</div>
 	</section>
 
-	
+
 
 	<footer>
 		<div class="footer__wrapper">
 			<div class="footer__row social__row">
 				<div class="row--wrapper reverse container">
-					<div class="brand">© 2021  Brand  All Rights Reserved.</div>
+					<div class="brand">© 2021 Brand All Rights Reserved.</div>
 					<div class="social">
 						<div class="social__icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 						<div class="social__icon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
@@ -168,7 +150,10 @@
 		</div>
 	</footer>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+		integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+	</script>
 	<script src="script.js"></script>
 </body>
+
 </html>
