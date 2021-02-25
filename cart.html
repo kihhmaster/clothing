@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<section class="navbar">
 		<div class="navbar__wrapper">
@@ -31,7 +34,7 @@
 		<div class="menu">
 			<button class="close">x</button>
 			<div class="menu__wrapper">
-				<p class="menu__title--1">menu</p>						
+				<p class="menu__title--1">menu</p>
 				<div class="menu__column">
 					<p class="menu__title--2">man</p>
 					<a href="catalog.html" class="menu__item">Accessories(catalog.html)</a>
@@ -57,7 +60,7 @@
 					<a href="#" class="menu__item">Bags</a>
 				</div>
 			</div>
-	 
+
 		</div>
 	</section>
 
@@ -74,59 +77,52 @@
 			</div>
 		</div>
 	</section>
-	<section class="cart">
-		<div class="cart__wrapper container">
-			<div class="cart__left">
-				<div class="cart--left__wrapper">
-					<div class="cart--left__item">
-						<div class="cart--left__img">
-							<img src="img/card__item--3.png" alt="foto">
-						</div>
-						<div class="cart---left__desc">
-							<button class="cart---left__close">x</button>
-							<div class="cart---left__title">MANGO  PEOPLE  T-SHIRT</div>
-							<div class="cart---left__price">Price: <span>$300 </span>	</div>
-							<div class="cart---left__color">Color: <span>Red</span></div>
-							<div class="cart---left__size">Size: <span>Xl</span>	</div>
-							<div class="cart---left__quantity">Quantity:	<input type="text" placeholder="1"></div>
-						</div>
+	<section class="cart container">
+		<div class="cart--grid__wrapper">
+			<div class="cart--left__wrapper">
+				<div class="cart--left__item">
+					<div class="cart--left__img">
+						<img src="img/card__item--3.png" alt="foto">
 					</div>
-					<div class="cart--left__item">
-						<div class="cart--left__img">
-							<img src="img/card__item--1.png" alt="foto">
-						</div>
-						<div class="cart---left__desc">
-							<button class="cart---left__close">x</button>
-							<div class="cart---left__title">MANGO  PEOPLE  T-SHIRT</div>
-							<div class="cart---left__price">Price: <span>$300 </span>	</div>
-							<div class="cart---left__color">Color: <span>Red</span></div>
-							<div class="cart---left__size">Size: <span>Xl</span>	</div>
-							<div class="cart---left__quantity">Quantity:	<input type="text" placeholder="1"></div>
-						</div>
-					</div>
-					<div class="cart-left__button__wrapper">
-						<button class="cart__left--button">CLEAR SHOPPING CART</button>
-						<button class="cart__left--button">CONTINUE SHOPPING</button>
+					<div class="cart---left__desc">
+						<button class="cart---left__close">x</button>
+						<div class="cart---left__title">MANGO PEOPLE T-SHIRT</div>
+						<div class="cart---left__price">Price: <span>$300 </span> </div>
+						<div class="cart---left__color">Color: <span>Red</span></div>
+						<div class="cart---left__size">Size: <span>Xl</span> </div>
+						<div class="cart---left__quantity">Quantity: <input type="text" placeholder="1"></div>
 					</div>
 				</div>
-
+				<div class="cart--left__item">
+					<div class="cart--left__img">
+						<img src="img/card__item--1.png" alt="foto">
+					</div>
+					<div class="cart---left__desc">
+						<button class="cart---left__close">x</button>
+						<div class="cart---left__title">MANGO PEOPLE T-SHIRT</div>
+						<div class="cart---left__price">Price: <span>$300 </span> </div>
+						<div class="cart---left__color">Color: <span>Red</span></div>
+						<div class="cart---left__size">Size: <span>Xl</span> </div>
+						<div class="cart---left__quantity">Quantity: <input type="text" placeholder="1"></div>
+					</div>
+				</div>
+				<div class="cart-left__button__wrapper">
+					<button class="cart__left--button">CLEAR SHOPPING CART</button>
+					<button class="cart__left--button">CONTINUE SHOPPING</button>
+				</div>
 			</div>
-			<div class="cart__right">
-				 <div class="cart--right__wrapper">
-					  <div class="adress">
-							<p class="adress__title">SHIPPING ADRESS</p>
-							<input type="text" name="country" placeholder="country">
-							<input type="text" name="city"  placeholder="city">
-							<input type="text" name="adress" placeholder="adress">
-							<button class="adress__button">GET A QUOTE</button>
-						</div>
-						<div class="registration">
-							<div class="subTotal">SUB TOTAL  <span>$900</span></div>
-							<div class="grandTotal">GRAND TOTAL <span>$900</span></div>
-							<div class="registration__line"></div>
-							<div class="registration__button">PROCEED TO CHECKOUT</div>
-						</div>         
-				 </div>
+			<div class="adress">
+				<p class="adress__title">SHIPPING ADRESS</p>
+				<input type="text" name="country" placeholder="country">
+				<input type="text" name="city" placeholder="city">
+				<input type="text" name="adress" placeholder="adress">
+				<button class="adress__button">GET A QUOTE</button>
+			</div>
+			<div class="registration">
+				<div class="subTotal">SUB TOTAL <span>$900</span></div>
+				<div class="grandTotal">GRAND TOTAL <span>$900</span></div>
+				<div class="registration__line"></div>
+				<div class="registration__button">PROCEED TO CHECKOUT</div>
 			</div>
 		</div>
 	</section>
@@ -150,13 +146,13 @@
 		</div>
 	</section>
 
-	
+
 
 	<footer>
 		<div class="footer__wrapper">
 			<div class="footer__row social__row">
 				<div class="row--wrapper reverse container">
-					<div class="brand">© 2021  Brand  All Rights Reserved.</div>
+					<div class="brand">© 2021 Brand All Rights Reserved.</div>
 					<div class="social">
 						<div class="social__icon"><i class="fa fa-facebook" aria-hidden="true"></i></div>
 						<div class="social__icon"><i class="fa fa-instagram" aria-hidden="true"></i></div>
@@ -168,7 +164,10 @@
 		</div>
 	</footer>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+		integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+	</script>
 	<script src="script.js"></script>
 </body>
+
 </html>
