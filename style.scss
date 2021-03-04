@@ -7,7 +7,8 @@ $accent1: #F16D7F;
 }
 
 * {
-
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -323,12 +324,12 @@ $accent1: #F16D7F;
 		}
 
 		&:hover {
-			background-size: 110%;
+			background-size: auto 110%;
 		}
 
 		.subtitle {
 			text-transform: uppercase;
-			font-family: Lato;
+			font-family: 'Lato', sans-serif;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 16px;
@@ -339,7 +340,7 @@ $accent1: #F16D7F;
 
 		.title {
 			text-transform: uppercase;
-			font-family: Lato;
+			font-family: 'Lato', sans-serif;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 24px;
@@ -485,6 +486,7 @@ $accent1: #F16D7F;
 .subscribe_column--left {
 	width: 100%;
 	max-width: 360px;
+	font-family: Lato, san-serif;
 
 	img {
 		margin-bottom: 30px;
@@ -721,7 +723,7 @@ $accent1: #F16D7F;
 }
 
 .card__icon__title {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -754,7 +756,7 @@ $accent1: #F16D7F;
 }
 
 .navigator__value {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
@@ -774,7 +776,7 @@ a {
 
 .navigator__item {
 	text-transform: uppercase;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 14px;
@@ -831,7 +833,7 @@ a {
 	left: 0;
 	user-select: none;
 	display: block;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
@@ -881,7 +883,6 @@ a {
 .filter-left__main {
 	summary {
 		border-left: 5px solid $accent1;
-		height: 30px;
 		padding: 18px 11px 9px 11px;
 		border-bottom: 1px solid #EBEBEB;
 		font-size: 16px;
@@ -917,7 +918,7 @@ a {
 	margin-top: 24px;
 
 	a {
-		font-family: Lato;
+		font-family: 'Lato', sans-serif;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 14px;
@@ -937,7 +938,7 @@ a {
 	display: flex;
 	justify-content: space-evenly;
 	text-transform: uppercase;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -968,15 +969,17 @@ a {
 .filter-right_main[open]>.filter-right_list {
 	background: #FFFFFF;
 	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-	position: relative;
+	position: absolute;
 	z-index: 2;
 	padding: 10px;
 	padding-bottom: 20px;
 	margin-right: 10px;
+	margin-top: 10px;
 }
 
 .filter-right_item {
 	margin-top: 10px;
+	display: flex;
 
 	input {
 		margin-right: 10px;
@@ -1016,7 +1019,7 @@ summary::-webkit-details-marker {
 .pagination__button {
 	background-color: transparent;
 	border: none;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-size: 25px;
 	font-weight: bold;
 	margin-left: 10px;
@@ -1041,7 +1044,7 @@ summary::-webkit-details-marker {
 	height: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -1091,7 +1094,7 @@ summary::-webkit-details-marker {
 }
 
 .desc-prouct__item--heading {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
@@ -1108,7 +1111,7 @@ summary::-webkit-details-marker {
 }
 
 .desc-prouct__item--title {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 18px;
@@ -1120,7 +1123,7 @@ summary::-webkit-details-marker {
 .desc-prouct__item--text {
 	width: 100%;
 	max-width: 555px;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
@@ -1131,7 +1134,7 @@ summary::-webkit-details-marker {
 }
 
 .desc-prouct__item--price {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 24px;
@@ -1151,7 +1154,7 @@ summary::-webkit-details-marker {
 .desc-prouct__item--list {
 	select {
 		border: none;
-		font-family: Lato;
+		font-family: 'Lato', sans-serif;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 14px;
@@ -1162,7 +1165,7 @@ summary::-webkit-details-marker {
 }
 
 .desc-prouct__item--button {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -1232,7 +1235,7 @@ summary::-webkit-details-marker {
 
 
 	.adress__title {
-		font-family: Lato;
+		font-family: 'Lato', sans-serif;
 		font-style: normal;
 		font-weight: 300;
 		font-size: 16px;
@@ -1249,7 +1252,7 @@ summary::-webkit-details-marker {
 		padding-left: 20px;
 
 		&::placeholder {
-			font-family: Lato;
+			font-family: 'Lato', sans-serif;
 			font-style: normal;
 			font-weight: 300;
 			font-size: 13px;
@@ -1330,7 +1333,7 @@ summary::-webkit-details-marker {
 }
 
 .cart---left__title {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
@@ -1341,7 +1344,7 @@ summary::-webkit-details-marker {
 }
 
 .cart---left__price {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 22px;
@@ -1358,7 +1361,7 @@ summary::-webkit-details-marker {
 .cart---left__color,
 .cart---left__size,
 .cart---left__quantity {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 22px;
@@ -1415,7 +1418,7 @@ summary::-webkit-details-marker {
 
 
 .subTotal {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 11px;
@@ -1429,7 +1432,7 @@ summary::-webkit-details-marker {
 }
 
 .grandTotal {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -1492,7 +1495,7 @@ summary::-webkit-details-marker {
 	width: 100%;
 	height: 45px;
 	border: 1px solid #A4A4A4;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 13px;
@@ -1504,7 +1507,7 @@ summary::-webkit-details-marker {
 
 .gender {
 	display: flex;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 11px;
@@ -1527,7 +1530,7 @@ summary::-webkit-details-marker {
 }
 
 .reg__left--desc {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 13px;
@@ -1538,7 +1541,7 @@ summary::-webkit-details-marker {
 
 .reg__left--text {
 
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 16px;
@@ -1571,7 +1574,7 @@ summary::-webkit-details-marker {
 }
 
 .reg__right--title {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 24px;
@@ -1581,7 +1584,7 @@ summary::-webkit-details-marker {
 }
 
 .reg__tight--desc {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 24px;
@@ -1591,7 +1594,7 @@ summary::-webkit-details-marker {
 }
 
 .red__right--donation {
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 24px;
@@ -1831,23 +1834,29 @@ summary::-webkit-details-marker {
 			margin-bottom: 25px;
 		}
 	}
+
 	.cart---left__price {
 		font-size: 14px;
 		line-height: 17px;
+
 		span {
 			font-size: 15px;
 		}
 	}
+
 	.cart__left--button {
 		padding: 10px 12px;
 		font-size: 12px;
 	}
+
 	.cart---left__quantity input {
 		width: 24px;
 	}
+
 	.cart---left__close {
 		padding: 0;
 	}
+
 	.cart---left__color,
 	.cart---left__size,
 	.cart---left__quantity {
@@ -1877,9 +1886,11 @@ summary::-webkit-details-marker {
 		flex-direction: column;
 
 	}
+
 	.reg__left {
 		max-width: none;
 	}
+
 	.reg__right {
 		margin-top: 40px;
 	}

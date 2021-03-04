@@ -1,7 +1,11 @@
+window.addEventListener('DOMContentLoaded', function() {
+	'user scrict';
+
+
 const burger = document.querySelector('.burger');
 const closebtn = document.querySelector('.close');
 const overlay = document.querySelector('.overlay');
-const menu = document.querySelector('.overlay .menu');
+// const menu = document.querySelector('.overlay .menu');
 
 let isOpen = false;
 burger.addEventListener("click", () => {
@@ -29,4 +33,6 @@ overlay.addEventListener("click", () => {
 	isOpen = !isOpen;
 	overlay.classList.remove("open");
 	document.body.style.overflow = "scroll";
+});
+
 });
